@@ -1,0 +1,73 @@
+@use "../abstracts/colors" as c;
+
+.card{
+    width: 340px;
+    margin: 70px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 2px rgb(0 0 0 / .1);
+}
+
+.card__img-container{
+    height: 220px;
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+}
+
+.card__info{
+    padding: 35px;
+}
+
+.card__title{
+    margin-top: 0;
+}
+
+.card__profile{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile__img{
+    width: 50px;
+
+    img{
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+.profile__text{
+    margin-left: 15px;
+}
+
+.profile__media{
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: c.$light-grayish-blue;
+    position: relative;
+    //z-index: 20;
+
+    img{
+        width: 40%;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+    }
+}
+
+/* .media__card{
+    position: absolute;
+    z-index: 10;
+} */
+
+.hidden{
+    display: none;
+}

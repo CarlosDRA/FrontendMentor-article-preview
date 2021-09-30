@@ -1,0 +1,10 @@
+@use "../abstracts/colors" as c;
+
+html,body{
+    min-height: 100vh;
+}
+
+body{
+    background-color: c.$light-grayish-blue;
+    padding-top: 1px;
+}

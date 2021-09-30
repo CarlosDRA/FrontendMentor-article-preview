@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./assets/styles/css/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/css/main.css">
 
     <title>Article preview</title>
 </head>
@@ -20,10 +21,10 @@
     <h1 style="display: none;">Article</h1>
 
     <article class="card">
-        <div class="card__img">
-            <img src="./assets/images/drawers.jpg" alt="drawers image">
+        <div class="card__img-container">
+            <img src="./assets/images/drawers.jpg" alt="drawers image" class="card__img">
         </div>
-        <section>
+        <section class="card__info">
             <h2 class="card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
             <p class="card__text"> Ever been in a room and felt like something was missing?
                 Perhaps it felt slightly bare and uninviting. 
@@ -34,12 +35,12 @@
                     <img src="./assets/images/avatar-michelle.jpg" alt="Profile picture">
                 </div>
                 <div class="profile__text">
-                    <h3 class="profile__name">Michelle Appleton</h3>
-                    <p class="profile__date">28 Jun 2020</p>
+                    <h3 class="profile__name">Michelle Appleton<br>
+                    <span class="profile__date">28 Jun 2020</span></h3>
                 </div>
                 <div class="profile__media">
                     <img src="./assets/images/icon-share.svg" alt="Share icon">
-                    <div class="media__card">
+                    <div class="media__card hidden">
                         <p class="media__text">S H A R E</p>
                         <img src="./assets/images/icon-facebook.svg" alt="Facebook icon">
                         <img src="./assets/images/icon-twitter.svg" alt="Twitter icon">
