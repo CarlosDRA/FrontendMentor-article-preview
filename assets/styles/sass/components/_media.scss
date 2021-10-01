@@ -1,0 +1,49 @@
+@use "../abstracts/colors" as c;
+
+.media__card{
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    background-color: c.$very-dark-grayish-blue;
+    z-index: 10;
+
+    a{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+
+    :nth-child(1){
+        letter-spacing: 1px;
+    }
+
+    :nth-child(4){
+        margin-right: 110px;
+    }
+}
+
+.media__share{
+    height: 100%;
+    margin-left: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dark__bg{
+    background-color: c.$grayish-blue;
+    //color: c.$light-grayish-blue
+}
+
+.hidden{
+    display: none;
+}
