@@ -41,9 +41,43 @@
 
 .dark__bg{
     background-color: c.$grayish-blue;
-    //color: c.$light-grayish-blue
 }
 
 .hidden{
     display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .media__card{
+        width: 250px;
+        height: 50px;
+        position: absolute;
+        right: -70px;
+        bottom: 100px;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px 2px rgb(0 0 0 / .1);
+        justify-content: space-evenly;
+
+        ::after{
+            content: "";
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            background-color: c.$very-dark-grayish-blue;
+            z-index: -1;
+            transform: translate(-50%, 0) rotate(45deg);
+        }
+    }
+
+    .media__share{
+        margin: 0;
+        justify-content: space-evenly;
+
+        :nth-child(4){
+            margin: 0;
+        }
+    }
+    
 }

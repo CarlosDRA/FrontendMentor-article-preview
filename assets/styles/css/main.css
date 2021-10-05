@@ -1,5 +1,5 @@
 html, body {
-  min-height: 100vh;
+  min-height: 99.9vh;
 }
 
 body {
@@ -109,6 +109,32 @@ body {
   left: 12px;
 }
 
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 800px;
+    height: 300px;
+    margin-top: 25vh;
+    display: flex;
+    overflow: visible;
+  }
+
+  .card__img-container {
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    overflow: hidden;
+  }
+
+  .card__info {
+    width: 500px;
+    padding: 35px;
+  }
+
+  .card__title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+}
 .media__card {
   height: 75px;
   width: 100%;
@@ -150,6 +176,38 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .media__card {
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    right: -70px;
+    bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+  }
+  .media__card ::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: #48556a;
+    z-index: -1;
+    transform: translate(-50%, 0) rotate(45deg);
+  }
+
+  .media__share {
+    margin: 0;
+    justify-content: space-evenly;
+  }
+  .media__share :nth-child(4) {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

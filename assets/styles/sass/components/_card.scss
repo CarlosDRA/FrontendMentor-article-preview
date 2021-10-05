@@ -64,3 +64,34 @@
         left: 12px;
     }
 }
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+    .card{
+        width: 800px;
+        height: 300px;
+        margin-top: 25vh;
+        display: flex;
+        overflow: visible;
+    }
+    
+    .card__img-container{
+        height: 100%;
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        overflow: hidden;
+    }
+    
+    .card__info{
+        width: 500px;
+        padding: 35px
+    }
+    
+    .card__title{
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+}
