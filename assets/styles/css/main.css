@@ -127,6 +127,9 @@ body {
     border-bottom-left-radius: inherit;
     overflow: hidden;
   }
+  .card__img-container img {
+    object-fit: cover;
+  }
 
   .card__info {
     width: 500px;
@@ -138,6 +141,10 @@ body {
     line-height: 1.8rem;
   }
 }
+.clear__arrow {
+  filter: brightness(190%);
+}
+
 .media__card {
   height: 75px;
   width: 100%;

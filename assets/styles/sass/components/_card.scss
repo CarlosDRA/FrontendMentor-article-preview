@@ -87,6 +87,10 @@
         border-top-left-radius: inherit;
         border-bottom-left-radius: inherit;
         overflow: hidden;
+
+        img{
+            object-fit: cover;
+        }
     }
     
     .card__info{
@@ -98,4 +102,8 @@
         font-size: 1.4rem;
         line-height: 1.8rem;
     }
+}
+
+.clear__arrow{
+    filter: brightness(190%);
 }
